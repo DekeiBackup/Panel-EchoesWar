@@ -182,17 +182,5 @@
     <Resource Include="Images\Bot Radio Container.png" />
     <Resource Include="Images\Web Container.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\Command TeamSpeak Block.png" />
-    <Resource Include="Images\Command Play Button.png" />
-    <Resource Include="Images\Command Restart Button.png" />
-    <Resource Include="Images\Command Stop Button.png" />
-    <Resource Include="Images\Command Textfield Background.png" />
-    <Resource Include="Images\Hover Execute Button.png" />
-    <Resource Include="Images\Normal Execute Button.png" />
-    <Resource Include="Images\ServerQuery Block.png" />
-    <Resource Include="Images\Status TeamSpeak Block.png" />
-    <Resource Include="Images\Status Label Background.png" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
