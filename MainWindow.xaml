@@ -1,0 +1,182 @@
+﻿<Window x:Class="Panel_EchoesWar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Panel_EchoesWar"
+        mc:Ignorable="d" Height="600" Width="900" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Topmost="True" BorderThickness="0" WindowStyle="None" Visibility="Visible" AllowsTransparency="True" HorizontalAlignment="Left" HorizontalContentAlignment="Center" MouseDown="Window_MouseDown" Icon="logo.png" Title="Panel EchoesWar">
+
+    <Window.Background>
+        <ImageBrush ImageSource="Page de connexion.png"/>
+    </Window.Background>
+    <Window.Resources>
+        <ImageBrush x:Key="Inscription Container" ImageSource="Inscription Form.png"/>
+        <ImageBrush x:Key="Login Container" ImageSource="Login Form.png"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.Resources>
+            <ImageBrush x:Key="NormalConnexionButton" ImageSource="Normal Connexion Button.png"/>
+            <ImageBrush x:Key="HoverConnexionButton" ImageSource="Hover Connexion Button.png"/>
+            
+            <ImageBrush x:Key="NormalCloseButton" ImageSource="Normal Close Button.png"/>
+            <ImageBrush x:Key="HoverCloseButton" ImageSource="Hover Close Button.png"/>
+
+            <ImageBrush x:Key="NormalMinimizeButton" ImageSource="Normal Minimize Button.png"/>
+            <ImageBrush x:Key="HoverMinimizeButton" ImageSource="Hover Minimize Button.png"/>
+
+            <ImageBrush x:Key="NormalInscriptionLinkButton" ImageSource="Normal Inscription Link Button.png"/>
+            <ImageBrush x:Key="HoverInscriptionLinkButton" ImageSource="Hover Inscription Link Button.png"/>
+
+            <ImageBrush x:Key="NormalInscriptionButton" ImageSource="Normal Inscription Button.png"/>
+            <ImageBrush x:Key="HoverInscriptionButton" ImageSource="Hover Inscription Button.png"/>
+
+            <ImageBrush x:Key="NormalConnexionLinkButton" ImageSource="Normal Connexion Link Button.png"/>
+            <ImageBrush x:Key="HoverConnexionLinkButton" ImageSource="Hover Connexion Link Button.png"/>
+            
+            <Style x:Key="ConnexionButton" TargetType="{x:Type Button}">
+                <Setter Property="Background" Value="{StaticResource NormalConnexionButton}"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background"  Value="{StaticResource HoverConnexionButton}"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            <Style x:Key="CloseButton" TargetType="{x:Type Button}">
+                <Setter Property="Background" Value="{StaticResource NormalCloseButton}"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background"  Value="{StaticResource HoverCloseButton}"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            <Style x:Key="MinimizeButton" TargetType="{x:Type Button}">
+                <Setter Property="Background" Value="{StaticResource NormalMinimizeButton}"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background"  Value="{StaticResource HoverMinimizeButton}"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            <Style x:Key="InscriptionLinkButton" TargetType="{x:Type Button}">
+                <Setter Property="Background" Value="{StaticResource NormalInscriptionLinkButton}"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background"  Value="{StaticResource HoverInscriptionLinkButton}"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            <Style x:Key="ConnexionLinkButton" TargetType="{x:Type Button}">
+                <Setter Property="Background" Value="{StaticResource NormalConnexionLinkButton}"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background"  Value="{StaticResource HoverConnexionLinkButton}"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            <Style x:Key="InscriptionButton" TargetType="{x:Type Button}">
+                <Setter Property="Background" Value="{StaticResource NormalInscriptionButton}"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background"  Value="{StaticResource HoverInscriptionButton}"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </Grid.Resources>
+        <Grid x:Name="container" Width="300" Height="350">
+            <Grid.Background>
+                <ImageBrush ImageSource="Login Form.png"/>
+            </Grid.Background>
+        </Grid>
+        <Grid x:Name="Login" Opacity="1">
+            <TextBox x:Name="connexionUsernameBox" HorizontalAlignment="Left" Height="37" Margin="319,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" BorderBrush="{x:Null}" FontFamily="SimSun" FontSize="20" FontWeight="Bold" VerticalContentAlignment="Center" Foreground="#FF95989A" Padding="7,0,0,0">
+                <TextBox.Background>
+                    <ImageBrush ImageSource="Champ de texte.png"/>
+                </TextBox.Background>
+            </TextBox>
+            <PasswordBox x:Name="connexionPasswordBox" HorizontalAlignment="Left" Height="37" Margin="319,304,0,0" VerticalAlignment="Top" Width="262" BorderBrush="{x:Null}" FontFamily="SimSun" FontSize="20" VerticalContentAlignment="Center" Foreground="#FF95989A" Padding="7,0,0,0">
+                <PasswordBox.Background>
+                    <ImageBrush ImageSource="Champ de texte.png"/>
+                </PasswordBox.Background>
+            </PasswordBox>
+            <Button x:Name="connexionButton" Style="{StaticResource ConnexionButton}" Content="Button" HorizontalAlignment="Left" Margin="320,360,0,0" VerticalAlignment="Top" Width="260" BorderBrush="{x:Null}" Foreground="{x:Null}" Height="40" Padding="0" Cursor="Hand" Click="ConnexionButtonClick">
+
+            </Button>
+            <Button x:Name="inscriptionLinkButton" Style="{StaticResource InscriptionLinkButton}" Click="InscriptionLinkButtonClick" HorizontalAlignment="Left" Margin="539,428,0,0" VerticalAlignment="Top" Width="32" Height="32" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+        </Grid>
+        <Grid x:Name="Inscription" Opacity="0" IsEnabled="False" HorizontalAlignment="Right">
+            <TextBox x:Name="inscriptionUsernameBox" HorizontalAlignment="Left" Height="37" Margin="319,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" BorderBrush="{x:Null}" FontFamily="SimSun" FontSize="20" FontWeight="Bold" VerticalContentAlignment="Center" Foreground="#FF95989A" Padding="7,0,0,0">
+                <TextBox.Background>
+                    <ImageBrush ImageSource="Champ de texte.png"/>
+                </TextBox.Background>
+            </TextBox>
+            <PasswordBox x:Name="inscriptionPasswordBox" HorizontalAlignment="Left" Height="37" Margin="319,265,0,0" VerticalAlignment="Top" Width="262" BorderBrush="{x:Null}" FontFamily="SimSun" FontSize="20" VerticalContentAlignment="Center" Foreground="#FF95989A" Padding="7,0,0,0">
+                <PasswordBox.Background>
+                    <ImageBrush ImageSource="Champ de texte.png"/>
+                </PasswordBox.Background>
+            </PasswordBox>
+            <PasswordBox x:Name="inscriptionConfirmPasswordBox" HorizontalAlignment="Left" Height="37" Margin="319,345,0,0" VerticalAlignment="Top" Width="262" BorderBrush="{x:Null}" FontFamily="SimSun" FontSize="20" VerticalContentAlignment="Center" Foreground="#FF95989A" Padding="7,0,0,0">
+                <PasswordBox.Background>
+                    <ImageBrush ImageSource="Champ de texte.png"/>
+                </PasswordBox.Background>
+            </PasswordBox>
+            <Button x:Name="inscriptionButton" Style="{StaticResource InscriptionButton}" Content="Button" HorizontalAlignment="Left" Margin="320,398,0,0" VerticalAlignment="Top" Width="260" BorderBrush="{x:Null}" Foreground="{x:Null}" Height="40" Padding="0" Cursor="Hand" Click="InscriptionButtonClick" />
+            <Button x:Name="connexionLinkButton" Style="{StaticResource ConnexionLinkButton}" Click="ConnexionLinkButtonClick" HorizontalAlignment="Left" Margin="539,470,0,0" VerticalAlignment="Top" Width="32" Height="32" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand" />
+        </Grid>
+        <Button x:Name="closeButton" Style="{StaticResource CloseButton}" Click="CloseButtonClick" HorizontalAlignment="Left" Margin="848,20,0,0" VerticalAlignment="Top" Width="32" Height="32" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+        <Button x:Name="minimizeButton" Style="{StaticResource MinimizeButton}" Click="MinimizeButtonClick" HorizontalAlignment="Left" Margin="801,20,0,0" VerticalAlignment="Top" Width="32" Height="32" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+    </Grid>
+</Window>

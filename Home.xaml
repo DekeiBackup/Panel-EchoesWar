@@ -1,0 +1,213 @@
+﻿<Window x:Class="Panel_EchoesWar.Home"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Panel_EchoesWar"
+        mc:Ignorable="d"
+        Title="Home" Height="600" Width="900" AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" MouseDown="Window_MouseDown" Loaded="Window_Loaded">
+    <Window.Background>
+        <ImageBrush ImageSource="Page d'accueil.png"/>
+    </Window.Background>
+    <Grid x:Name="Container" Margin="0, -600, 0, 0">
+
+        <Grid.Resources>
+
+            <ImageBrush x:Key="NormalCloseButton" ImageSource="Normal Close Button.png"/>
+            <ImageBrush x:Key="HoverCloseButton" ImageSource="Hover Close Button.png"/>
+
+            <ImageBrush x:Key="NormalMinimizeButton" ImageSource="Normal Minimize Button.png"/>
+            <ImageBrush x:Key="HoverMinimizeButton" ImageSource="Hover Minimize Button.png"/>
+
+            <ImageBrush x:Key="NormalPlayButton" ImageSource="Normal Play Button.png"/>
+            <ImageBrush x:Key="HoverPlayButton" ImageSource="Hover Play Button.png"/>
+
+            <ImageBrush x:Key="NormalStopButton" ImageSource="Normal Stop Button.png"/>
+            <ImageBrush x:Key="HoverStopButton" ImageSource="Hover Stop Button.png"/>
+
+            <ImageBrush x:Key="NormalRestartButton" ImageSource="Normal Restart Button.png"/>
+            <ImageBrush x:Key="HoverRestartButton" ImageSource="Hover Restart Button.png"/>
+
+            <ImageBrush x:Key="NormalBackButton" ImageSource="Normal Back Button.png"/>
+            <ImageBrush x:Key="HoverBackButton" ImageSource="Hover Back Button.png"/>
+
+            <Style x:Key="CloseButton" TargetType="{x:Type Button}">
+                <Setter Property="Background" Value="{StaticResource NormalCloseButton}"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background"  Value="{StaticResource HoverCloseButton}"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            <Style x:Key="MinimizeButton" TargetType="{x:Type Button}">
+                <Setter Property="Background" Value="{StaticResource NormalMinimizeButton}"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background"  Value="{StaticResource HoverMinimizeButton}"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            <Style x:Key="PlayButton" TargetType="{x:Type Button}">
+                <Setter Property="Background" Value="{StaticResource NormalPlayButton}"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background"  Value="{StaticResource HoverPlayButton}"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            <Style x:Key="StopButton" TargetType="{x:Type Button}">
+                <Setter Property="Background" Value="{StaticResource NormalStopButton}"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background"  Value="{StaticResource HoverStopButton}"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            <Style x:Key="RestartButton" TargetType="{x:Type Button}">
+                <Setter Property="Background" Value="{StaticResource NormalRestartButton}"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background"  Value="{StaticResource HoverRestartButton}"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            <Style x:Key="BackButton" TargetType="{x:Type Button}">
+                <Setter Property="Background" Value="{StaticResource NormalBackButton}"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background"  Value="{StaticResource NormalBackButton}"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </Grid.Resources>
+
+        <Grid x:Name="BlockContainer">
+
+            <Grid x:Name="TeamSpeakBlock" MouseDown="TeamSpeakBlock_MouseDown" Opacity="0" Width="400" Height="183" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40, 100,0,0">
+                <Grid.Background>
+                    <ImageBrush ImageSource="TeamSpeak Block.png"/>
+                </Grid.Background>
+                <Button x:Name="teamspeakPlayButton" Click="Button_Click" Style="{StaticResource PlayButton}" HorizontalAlignment="Left" Margin="23,66,0,0" VerticalAlignment="Top" Width="100" Height="100" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+                <Button x:Name="teamspeakStopButton" Click="Button_Click" Style="{StaticResource StopButton}" HorizontalAlignment="Left" Margin="151,66,0,0" VerticalAlignment="Top" Width="100" Height="100" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+                <Button x:Name="teamspeakRestartButton" Click="Button_Click" Style="{StaticResource RestartButton}" HorizontalAlignment="Left" Margin="279,66,0,0" VerticalAlignment="Top" Width="100" Height="100" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+            </Grid>
+            <Grid x:Name="BotAdminBlock" MouseDown="BotAdminBlock_MouseDown" Opacity="0" Width="400" Height="183" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="460, 100,0,0">
+                <Grid.Background>
+                    <ImageBrush ImageSource="Bot Admin Block.png"/>
+                </Grid.Background>
+                <Button x:Name="botadminPlayButton" Click="Button_Click" Style="{StaticResource PlayButton}" HorizontalAlignment="Left" Margin="23,66,0,0" VerticalAlignment="Top" Width="100" Height="100" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+                <Button x:Name="botadminStopButton" Click="Button_Click" Style="{StaticResource StopButton}" HorizontalAlignment="Left" Margin="151,66,0,0" VerticalAlignment="Top" Width="100" Height="100" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+                <Button x:Name="botadminRestartButton" Click="Button_Click" Style="{StaticResource RestartButton}" HorizontalAlignment="Left" Margin="279,66,0,0" VerticalAlignment="Top" Width="100" Height="100" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+            </Grid>
+            <Grid x:Name="BotRadioBlock" MouseDown="BotRadioBlock_MouseDown" Opacity="0" Width="400" Height="183" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40, 317,0,0">
+                <Grid.Background>
+                    <ImageBrush ImageSource="Bot Radio Block.png"/>
+                </Grid.Background>
+                <Button x:Name="botradioPlayButton" Click="Button_Click" Style="{StaticResource PlayButton}" HorizontalAlignment="Left" Margin="23,66,0,0" VerticalAlignment="Top" Width="100" Height="100" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+                <Button x:Name="botradioStopButton" Click="Button_Click" Style="{StaticResource StopButton}" HorizontalAlignment="Left" Margin="151,66,0,0" VerticalAlignment="Top" Width="100" Height="100" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+                <Button x:Name="botradioRestartButton" Click="Button_Click" Style="{StaticResource RestartButton}" HorizontalAlignment="Left" Margin="279,66,0,0" VerticalAlignment="Top" Width="100" Height="100" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+            </Grid>
+            <Grid x:Name="WebBlock" MouseDown="WebBlock_MouseDown" Opacity="0" Width="400" Height="183" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="460, 317,0,0">
+                <Grid.Background>
+                    <ImageBrush ImageSource="Web Block.png"/>
+                </Grid.Background>
+                <Button x:Name="webPlayButton" Click="Button_Click" Style="{StaticResource PlayButton}" HorizontalAlignment="Left" Margin="23,66,0,0" VerticalAlignment="Top" Width="100" Height="100" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+                <Button x:Name="webStopButton" Click="Button_Click" Style="{StaticResource StopButton}" HorizontalAlignment="Left" Margin="151,66,0,0" VerticalAlignment="Top" Width="100" Height="100" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+                <Button x:Name="webRestartButton" Click="Button_Click" Style="{StaticResource RestartButton}" HorizontalAlignment="Left" Margin="279,66,0,0" VerticalAlignment="Top" Width="100" Height="100" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+            </Grid>
+            <Grid x:Name="statusBar" Opacity="0" Width="820" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40, 534,0,0">
+                <Grid.Background>
+                    <ImageBrush ImageSource="Status Bar.png"/>
+                </Grid.Background>
+                <Label x:Name="statusText" FontFamily="Sitka Banner" FontSize="17" HorizontalAlignment="Center" VerticalContentAlignment="Center" Foreground="#FF31708F">Dernière commande exécutée: Aucune commande executée</Label>
+            </Grid>
+
+        </Grid>
+
+        <Grid x:Name="TeamSpeakContainer" Width="820" Height="450" Margin="940, 100, 40, 50" Opacity="0">
+            <Grid.Background>
+                <ImageBrush ImageSource="TeamSpeak Container.png"/>
+            </Grid.Background>
+            <Button x:Name="backButton" Style="{StaticResource BackButton}" Click="backButton_Click" HorizontalAlignment="Left" Margin="15,10,0,0" VerticalAlignment="Top" Width="40" Height="40" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+        </Grid>
+
+        <Grid x:Name="BotAdminContainer" Width="820" Height="450" Margin="940, 100, 40, 50" Opacity="0">
+            <Grid.Background>
+                <ImageBrush ImageSource="Bot Admin Container.png"/>
+            </Grid.Background>
+            <Button Style="{StaticResource BackButton}" Click="backButton_Click" HorizontalAlignment="Left" Margin="15,10,0,0" VerticalAlignment="Top" Width="40" Height="40" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+        </Grid>
+
+        <Grid x:Name="BotRadioContainer" Width="820" Height="450" Margin="940, 100, 40, 50" Opacity="0">
+            <Grid.Background>
+                <ImageBrush ImageSource="Bot Radio Container.png"/>
+            </Grid.Background>
+            <Button Style="{StaticResource BackButton}" Click="backButton_Click" HorizontalAlignment="Left" Margin="15,10,0,0" VerticalAlignment="Top" Width="40" Height="40" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+        </Grid>
+
+        <Grid x:Name="WebContainer" Width="820" Height="450" Margin="940, 100, 40, 50" Opacity="0">
+            <Grid.Background>
+                <ImageBrush ImageSource="Web Container.png"/>
+            </Grid.Background>
+            <Button Style="{StaticResource BackButton}" Click="backButton_Click" HorizontalAlignment="Left" Margin="15,10,0,0" VerticalAlignment="Top" Width="40" Height="40" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+        </Grid>
+        
+        <Button x:Name="closeButton" Style="{StaticResource CloseButton}" Click="CloseButtonClick" HorizontalAlignment="Left" Margin="848,20,0,0" VerticalAlignment="Top" Width="32" Height="32" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+        <Button x:Name="minimizeButton" Style="{StaticResource MinimizeButton}" Click="MinimizeButtonClick" HorizontalAlignment="Left" Margin="801,20,0,0" VerticalAlignment="Top" Width="32" Height="32" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+
+    </Grid>
+</Window>

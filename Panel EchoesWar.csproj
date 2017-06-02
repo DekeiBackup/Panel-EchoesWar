@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{731E9FB9-48A3-492B-ADC4-9D26EF6874B8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Panel_EchoesWar</RootNamespace>
+    <AssemblyName>Panel EchoesWar</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Champ de texte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hover Connexion Button.png" />
+    <Resource Include="Normal Connexion Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Page de connexion.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hover Close Button.png" />
+    <Resource Include="Normal Close Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hover Inscription Link Button.png" />
+    <Resource Include="Hover Minimize Button.png" />
+    <Resource Include="Normal Inscription Link Button.png" />
+    <Resource Include="Normal Minimize Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Login Form.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Inscription Form.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hover Connexion Link Button.png" />
+    <Resource Include="Normal Connexion Link Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hover Inscription Button.png" />
+    <Resource Include="Normal Inscription Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Page d%27accueil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="TeamSpeak Block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Bot Admin Block.png" />
+    <Resource Include="Bot Radio Block.png" />
+    <Resource Include="Web Block.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hover Play Button.png" />
+    <Resource Include="Hover Restart Button.png" />
+    <Resource Include="Hover Stop Button.png" />
+    <Resource Include="Normal Play Button.png" />
+    <Resource Include="Normal Restart Button.png" />
+    <Resource Include="Normal Stop Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Status Bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="TeamSpeak Container.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Hover Back Button.png" />
+    <Resource Include="Normal Back Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Bot Admin Container.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Bot Radio Container.png" />
+    <Resource Include="Web Container.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
