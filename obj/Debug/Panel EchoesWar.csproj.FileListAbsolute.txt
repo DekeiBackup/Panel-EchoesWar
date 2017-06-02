@@ -14,3 +14,19 @@ C:\Users\natky_000\Documents\Developpement C#\Panel EchoesWar Solution\Panel Ech
 C:\Users\natky_000\Documents\Developpement C#\Panel EchoesWar Solution\Panel EchoesWar\obj\Debug\Panel EchoesWar.pdb
 C:\Users\natky_000\Documents\Developpement C#\Panel EchoesWar Solution\Panel EchoesWar\obj\Debug\Home.g.cs
 C:\Users\natky_000\Documents\Developpement C#\Panel EchoesWar Solution\Panel EchoesWar\obj\Debug\Home.baml
+C:\Users\natky_000\Documents\Developpement C#\Panel EchoesWar Solution\Panel-EchoesWar\bin\Debug\Panel EchoesWar.exe.config
+C:\Users\natky_000\Documents\Developpement C#\Panel EchoesWar Solution\Panel-EchoesWar\bin\Debug\Panel EchoesWar.exe
+C:\Users\natky_000\Documents\Developpement C#\Panel EchoesWar Solution\Panel-EchoesWar\bin\Debug\Panel EchoesWar.pdb
+C:\Users\natky_000\Documents\Developpement C#\Panel EchoesWar Solution\Panel-EchoesWar\obj\Debug\Panel EchoesWar.csprojResolveAssemblyReference.cache
+C:\Users\natky_000\Documents\Developpement C#\Panel EchoesWar Solution\Panel-EchoesWar\obj\Debug\Home.g.cs
+C:\Users\natky_000\Documents\Developpement C#\Panel EchoesWar Solution\Panel-EchoesWar\obj\Debug\MainWindow.g.cs
+C:\Users\natky_000\Documents\Developpement C#\Panel EchoesWar Solution\Panel-EchoesWar\obj\Debug\App.g.cs
+C:\Users\natky_000\Documents\Developpement C#\Panel EchoesWar Solution\Panel-EchoesWar\obj\Debug\Panel EchoesWar_MarkupCompile.cache
+C:\Users\natky_000\Documents\Developpement C#\Panel EchoesWar Solution\Panel-EchoesWar\obj\Debug\Panel EchoesWar_MarkupCompile.lref
+C:\Users\natky_000\Documents\Developpement C#\Panel EchoesWar Solution\Panel-EchoesWar\obj\Debug\Home.baml
+C:\Users\natky_000\Documents\Developpement C#\Panel EchoesWar Solution\Panel-EchoesWar\obj\Debug\MainWindow.baml
+C:\Users\natky_000\Documents\Developpement C#\Panel EchoesWar Solution\Panel-EchoesWar\obj\Debug\Panel EchoesWar.g.resources
+C:\Users\natky_000\Documents\Developpement C#\Panel EchoesWar Solution\Panel-EchoesWar\obj\Debug\Panel_EchoesWar.Properties.Resources.resources
+C:\Users\natky_000\Documents\Developpement C#\Panel EchoesWar Solution\Panel-EchoesWar\obj\Debug\Panel EchoesWar.csproj.GenerateResource.Cache
+C:\Users\natky_000\Documents\Developpement C#\Panel EchoesWar Solution\Panel-EchoesWar\obj\Debug\Panel EchoesWar.exe
+C:\Users\natky_000\Documents\Developpement C#\Panel EchoesWar Solution\Panel-EchoesWar\obj\Debug\Panel EchoesWar.pdb

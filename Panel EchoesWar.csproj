@@ -35,7 +35,7 @@
   </PropertyGroup>
   <PropertyGroup />
   <PropertyGroup>
-    <ApplicationIcon>logo.ico</ApplicationIcon>
+    <ApplicationIcon>Images\logo.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -105,82 +105,82 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Champ de texte.png" />
+    <Resource Include="Images\Champ de texte.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Hover Connexion Button.png" />
-    <Resource Include="Normal Connexion Button.png" />
+    <Resource Include="Images\Hover Connexion Button.png" />
+    <Resource Include="Images\Normal Connexion Button.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Page de connexion.png">
+    <Resource Include="Images\Page de connexion.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Hover Close Button.png" />
-    <Resource Include="Normal Close Button.png" />
+    <Resource Include="Images\Hover Close Button.png" />
+    <Resource Include="Images\Normal Close Button.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Hover Inscription Link Button.png" />
-    <Resource Include="Hover Minimize Button.png" />
-    <Resource Include="Normal Inscription Link Button.png" />
-    <Resource Include="Normal Minimize Button.png" />
+    <Resource Include="Images\Hover Inscription Link Button.png" />
+    <Resource Include="Images\Hover Minimize Button.png" />
+    <Resource Include="Images\Normal Inscription Link Button.png" />
+    <Resource Include="Images\Normal Minimize Button.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="logo.png" />
+    <Resource Include="Images\logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Login Form.png" />
+    <Resource Include="Images\Login Form.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Inscription Form.png" />
+    <Resource Include="Images\Inscription Form.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Hover Connexion Link Button.png" />
-    <Resource Include="Normal Connexion Link Button.png" />
+    <Resource Include="Images\Hover Connexion Link Button.png" />
+    <Resource Include="Images\Normal Connexion Link Button.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Hover Inscription Button.png" />
-    <Resource Include="Normal Inscription Button.png" />
+    <Resource Include="Images\Hover Inscription Button.png" />
+    <Resource Include="Images\Normal Inscription Button.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Page d%27accueil.png" />
+    <Resource Include="Images\Page d%27accueil.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="TeamSpeak Block.png" />
+    <Resource Include="Images\TeamSpeak Block.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Bot Admin Block.png" />
-    <Resource Include="Bot Radio Block.png" />
-    <Resource Include="Web Block.png" />
+    <Resource Include="Images\Bot Admin Block.png" />
+    <Resource Include="Images\Bot Radio Block.png" />
+    <Resource Include="Images\Web Block.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="logo.ico" />
+    <Resource Include="Images\logo.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Hover Play Button.png" />
-    <Resource Include="Hover Restart Button.png" />
-    <Resource Include="Hover Stop Button.png" />
-    <Resource Include="Normal Play Button.png" />
-    <Resource Include="Normal Restart Button.png" />
-    <Resource Include="Normal Stop Button.png" />
+    <Resource Include="Images\Hover Play Button.png" />
+    <Resource Include="Images\Hover Restart Button.png" />
+    <Resource Include="Images\Hover Stop Button.png" />
+    <Resource Include="Images\Normal Play Button.png" />
+    <Resource Include="Images\Normal Restart Button.png" />
+    <Resource Include="Images\Normal Stop Button.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Status Bar.png" />
+    <Resource Include="Images\Status Bar.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="TeamSpeak Container.png" />
+    <Resource Include="Images\TeamSpeak Container.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Hover Back Button.png" />
-    <Resource Include="Normal Back Button.png" />
+    <Resource Include="Images\Hover Back Button.png" />
+    <Resource Include="Images\Normal Back Button.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Bot Admin Container.png" />
+    <Resource Include="Images\Bot Admin Container.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Bot Radio Container.png" />
-    <Resource Include="Web Container.png" />
+    <Resource Include="Images\Bot Radio Container.png" />
+    <Resource Include="Images\Web Container.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

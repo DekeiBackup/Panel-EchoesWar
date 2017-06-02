@@ -4,34 +4,34 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Panel_EchoesWar"
-        mc:Ignorable="d" Height="600" Width="900" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Topmost="True" BorderThickness="0" WindowStyle="None" Visibility="Visible" AllowsTransparency="True" HorizontalAlignment="Left" HorizontalContentAlignment="Center" MouseDown="Window_MouseDown" Icon="logo.png" Title="Panel EchoesWar">
+        mc:Ignorable="d" Height="600" Width="900" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Topmost="True" BorderThickness="0" WindowStyle="None" Visibility="Visible" AllowsTransparency="True" HorizontalAlignment="Left" HorizontalContentAlignment="Center" MouseDown="Window_MouseDown" Icon="Images/logo.png" Title="Panel EchoesWar">
 
     <Window.Background>
-        <ImageBrush ImageSource="Page de connexion.png"/>
+        <ImageBrush ImageSource="Images/Page de connexion.png"/>
     </Window.Background>
     <Window.Resources>
-        <ImageBrush x:Key="Inscription Container" ImageSource="Inscription Form.png"/>
-        <ImageBrush x:Key="Login Container" ImageSource="Login Form.png"/>
+        <ImageBrush x:Key="Inscription Container" ImageSource="Images/Inscription Form.png"/>
+        <ImageBrush x:Key="Login Container" ImageSource="Images/Login Form.png"/>
     </Window.Resources>
     <Grid>
         <Grid.Resources>
-            <ImageBrush x:Key="NormalConnexionButton" ImageSource="Normal Connexion Button.png"/>
-            <ImageBrush x:Key="HoverConnexionButton" ImageSource="Hover Connexion Button.png"/>
+            <ImageBrush x:Key="NormalConnexionButton" ImageSource="Images/Normal Connexion Button.png"/>
+            <ImageBrush x:Key="HoverConnexionButton" ImageSource="Images/Hover Connexion Button.png"/>
             
-            <ImageBrush x:Key="NormalCloseButton" ImageSource="Normal Close Button.png"/>
-            <ImageBrush x:Key="HoverCloseButton" ImageSource="Hover Close Button.png"/>
+            <ImageBrush x:Key="NormalCloseButton" ImageSource="Images/Normal Close Button.png"/>
+            <ImageBrush x:Key="HoverCloseButton" ImageSource="Images/Hover Close Button.png"/>
 
-            <ImageBrush x:Key="NormalMinimizeButton" ImageSource="Normal Minimize Button.png"/>
-            <ImageBrush x:Key="HoverMinimizeButton" ImageSource="Hover Minimize Button.png"/>
+            <ImageBrush x:Key="NormalMinimizeButton" ImageSource="Images/Normal Minimize Button.png"/>
+            <ImageBrush x:Key="HoverMinimizeButton" ImageSource="Images/Hover Minimize Button.png"/>
 
-            <ImageBrush x:Key="NormalInscriptionLinkButton" ImageSource="Normal Inscription Link Button.png"/>
-            <ImageBrush x:Key="HoverInscriptionLinkButton" ImageSource="Hover Inscription Link Button.png"/>
+            <ImageBrush x:Key="NormalInscriptionLinkButton" ImageSource="Images/Normal Inscription Link Button.png"/>
+            <ImageBrush x:Key="HoverInscriptionLinkButton" ImageSource="Images/Hover Inscription Link Button.png"/>
 
-            <ImageBrush x:Key="NormalInscriptionButton" ImageSource="Normal Inscription Button.png"/>
-            <ImageBrush x:Key="HoverInscriptionButton" ImageSource="Hover Inscription Button.png"/>
+            <ImageBrush x:Key="NormalInscriptionButton" ImageSource="Images/Normal Inscription Button.png"/>
+            <ImageBrush x:Key="HoverInscriptionButton" ImageSource="Images/Hover Inscription Button.png"/>
 
-            <ImageBrush x:Key="NormalConnexionLinkButton" ImageSource="Normal Connexion Link Button.png"/>
-            <ImageBrush x:Key="HoverConnexionLinkButton" ImageSource="Hover Connexion Link Button.png"/>
+            <ImageBrush x:Key="NormalConnexionLinkButton" ImageSource="Images/Normal Connexion Link Button.png"/>
+            <ImageBrush x:Key="HoverConnexionLinkButton" ImageSource="Images/Hover Connexion Link Button.png"/>
             
             <Style x:Key="ConnexionButton" TargetType="{x:Type Button}">
                 <Setter Property="Background" Value="{StaticResource NormalConnexionButton}"/>
@@ -138,18 +138,18 @@
         </Grid.Resources>
         <Grid x:Name="container" Width="300" Height="350">
             <Grid.Background>
-                <ImageBrush ImageSource="Login Form.png"/>
+                <ImageBrush ImageSource="Images/Login Form.png"/>
             </Grid.Background>
         </Grid>
         <Grid x:Name="Login" Opacity="1">
             <TextBox x:Name="connexionUsernameBox" HorizontalAlignment="Left" Height="37" Margin="319,224,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" BorderBrush="{x:Null}" FontFamily="SimSun" FontSize="20" FontWeight="Bold" VerticalContentAlignment="Center" Foreground="#FF95989A" Padding="7,0,0,0">
                 <TextBox.Background>
-                    <ImageBrush ImageSource="Champ de texte.png"/>
+                    <ImageBrush ImageSource="Images/Champ de texte.png"/>
                 </TextBox.Background>
             </TextBox>
             <PasswordBox x:Name="connexionPasswordBox" HorizontalAlignment="Left" Height="37" Margin="319,304,0,0" VerticalAlignment="Top" Width="262" BorderBrush="{x:Null}" FontFamily="SimSun" FontSize="20" VerticalContentAlignment="Center" Foreground="#FF95989A" Padding="7,0,0,0">
                 <PasswordBox.Background>
-                    <ImageBrush ImageSource="Champ de texte.png"/>
+                    <ImageBrush ImageSource="Images/Champ de texte.png"/>
                 </PasswordBox.Background>
             </PasswordBox>
             <Button x:Name="connexionButton" Style="{StaticResource ConnexionButton}" Content="Button" HorizontalAlignment="Left" Margin="320,360,0,0" VerticalAlignment="Top" Width="260" BorderBrush="{x:Null}" Foreground="{x:Null}" Height="40" Padding="0" Cursor="Hand" Click="ConnexionButtonClick">
@@ -160,17 +160,17 @@
         <Grid x:Name="Inscription" Opacity="0" IsEnabled="False" HorizontalAlignment="Right">
             <TextBox x:Name="inscriptionUsernameBox" HorizontalAlignment="Left" Height="37" Margin="319,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" BorderBrush="{x:Null}" FontFamily="SimSun" FontSize="20" FontWeight="Bold" VerticalContentAlignment="Center" Foreground="#FF95989A" Padding="7,0,0,0">
                 <TextBox.Background>
-                    <ImageBrush ImageSource="Champ de texte.png"/>
+                    <ImageBrush ImageSource="Images/Champ de texte.png"/>
                 </TextBox.Background>
             </TextBox>
             <PasswordBox x:Name="inscriptionPasswordBox" HorizontalAlignment="Left" Height="37" Margin="319,265,0,0" VerticalAlignment="Top" Width="262" BorderBrush="{x:Null}" FontFamily="SimSun" FontSize="20" VerticalContentAlignment="Center" Foreground="#FF95989A" Padding="7,0,0,0">
                 <PasswordBox.Background>
-                    <ImageBrush ImageSource="Champ de texte.png"/>
+                    <ImageBrush ImageSource="Images/Champ de texte.png"/>
                 </PasswordBox.Background>
             </PasswordBox>
             <PasswordBox x:Name="inscriptionConfirmPasswordBox" HorizontalAlignment="Left" Height="37" Margin="319,345,0,0" VerticalAlignment="Top" Width="262" BorderBrush="{x:Null}" FontFamily="SimSun" FontSize="20" VerticalContentAlignment="Center" Foreground="#FF95989A" Padding="7,0,0,0">
                 <PasswordBox.Background>
-                    <ImageBrush ImageSource="Champ de texte.png"/>
+                    <ImageBrush ImageSource="Images/Champ de texte.png"/>
                 </PasswordBox.Background>
             </PasswordBox>
             <Button x:Name="inscriptionButton" Style="{StaticResource InscriptionButton}" Content="Button" HorizontalAlignment="Left" Margin="320,398,0,0" VerticalAlignment="Top" Width="260" BorderBrush="{x:Null}" Foreground="{x:Null}" Height="40" Padding="0" Cursor="Hand" Click="InscriptionButtonClick" />

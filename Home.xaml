@@ -7,29 +7,29 @@
         mc:Ignorable="d"
         Title="Home" Height="600" Width="900" AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" MouseDown="Window_MouseDown" Loaded="Window_Loaded">
     <Window.Background>
-        <ImageBrush ImageSource="Page d'accueil.png"/>
+        <ImageBrush ImageSource="Images/Page d'accueil.png"/>
     </Window.Background>
     <Grid x:Name="Container" Margin="0, -600, 0, 0">
 
         <Grid.Resources>
 
-            <ImageBrush x:Key="NormalCloseButton" ImageSource="Normal Close Button.png"/>
-            <ImageBrush x:Key="HoverCloseButton" ImageSource="Hover Close Button.png"/>
+            <ImageBrush x:Key="NormalCloseButton" ImageSource="Images/Normal Close Button.png"/>
+            <ImageBrush x:Key="HoverCloseButton" ImageSource="Images/Hover Close Button.png"/>
 
-            <ImageBrush x:Key="NormalMinimizeButton" ImageSource="Normal Minimize Button.png"/>
-            <ImageBrush x:Key="HoverMinimizeButton" ImageSource="Hover Minimize Button.png"/>
+            <ImageBrush x:Key="NormalMinimizeButton" ImageSource="Images/Normal Minimize Button.png"/>
+            <ImageBrush x:Key="HoverMinimizeButton" ImageSource="Images/Hover Minimize Button.png"/>
 
-            <ImageBrush x:Key="NormalPlayButton" ImageSource="Normal Play Button.png"/>
-            <ImageBrush x:Key="HoverPlayButton" ImageSource="Hover Play Button.png"/>
+            <ImageBrush x:Key="NormalPlayButton" ImageSource="Images/Normal Play Button.png"/>
+            <ImageBrush x:Key="HoverPlayButton" ImageSource="Images/Hover Play Button.png"/>
 
-            <ImageBrush x:Key="NormalStopButton" ImageSource="Normal Stop Button.png"/>
-            <ImageBrush x:Key="HoverStopButton" ImageSource="Hover Stop Button.png"/>
+            <ImageBrush x:Key="NormalStopButton" ImageSource="Images/Normal Stop Button.png"/>
+            <ImageBrush x:Key="HoverStopButton" ImageSource="Images/Hover Stop Button.png"/>
 
-            <ImageBrush x:Key="NormalRestartButton" ImageSource="Normal Restart Button.png"/>
-            <ImageBrush x:Key="HoverRestartButton" ImageSource="Hover Restart Button.png"/>
+            <ImageBrush x:Key="NormalRestartButton" ImageSource="Images/Normal Restart Button.png"/>
+            <ImageBrush x:Key="HoverRestartButton" ImageSource="Images/Hover Restart Button.png"/>
 
-            <ImageBrush x:Key="NormalBackButton" ImageSource="Normal Back Button.png"/>
-            <ImageBrush x:Key="HoverBackButton" ImageSource="Hover Back Button.png"/>
+            <ImageBrush x:Key="NormalBackButton" ImageSource="Images/Normal Back Button.png"/>
+            <ImageBrush x:Key="HoverBackButton" ImageSource="Images/Hover Back Button.png"/>
 
             <Style x:Key="CloseButton" TargetType="{x:Type Button}">
                 <Setter Property="Background" Value="{StaticResource NormalCloseButton}"/>
@@ -139,7 +139,7 @@
 
             <Grid x:Name="TeamSpeakBlock" MouseDown="TeamSpeakBlock_MouseDown" Opacity="0" Width="400" Height="183" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40, 100,0,0">
                 <Grid.Background>
-                    <ImageBrush ImageSource="TeamSpeak Block.png"/>
+                    <ImageBrush ImageSource="Images/TeamSpeak Block.png"/>
                 </Grid.Background>
                 <Button x:Name="teamspeakPlayButton" Click="Button_Click" Style="{StaticResource PlayButton}" HorizontalAlignment="Left" Margin="23,66,0,0" VerticalAlignment="Top" Width="100" Height="100" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
                 <Button x:Name="teamspeakStopButton" Click="Button_Click" Style="{StaticResource StopButton}" HorizontalAlignment="Left" Margin="151,66,0,0" VerticalAlignment="Top" Width="100" Height="100" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
@@ -147,7 +147,7 @@
             </Grid>
             <Grid x:Name="BotAdminBlock" MouseDown="BotAdminBlock_MouseDown" Opacity="0" Width="400" Height="183" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="460, 100,0,0">
                 <Grid.Background>
-                    <ImageBrush ImageSource="Bot Admin Block.png"/>
+                    <ImageBrush ImageSource="Images/Bot Admin Block.png"/>
                 </Grid.Background>
                 <Button x:Name="botadminPlayButton" Click="Button_Click" Style="{StaticResource PlayButton}" HorizontalAlignment="Left" Margin="23,66,0,0" VerticalAlignment="Top" Width="100" Height="100" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
                 <Button x:Name="botadminStopButton" Click="Button_Click" Style="{StaticResource StopButton}" HorizontalAlignment="Left" Margin="151,66,0,0" VerticalAlignment="Top" Width="100" Height="100" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
@@ -155,7 +155,7 @@
             </Grid>
             <Grid x:Name="BotRadioBlock" MouseDown="BotRadioBlock_MouseDown" Opacity="0" Width="400" Height="183" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40, 317,0,0">
                 <Grid.Background>
-                    <ImageBrush ImageSource="Bot Radio Block.png"/>
+                    <ImageBrush ImageSource="Images/Bot Radio Block.png"/>
                 </Grid.Background>
                 <Button x:Name="botradioPlayButton" Click="Button_Click" Style="{StaticResource PlayButton}" HorizontalAlignment="Left" Margin="23,66,0,0" VerticalAlignment="Top" Width="100" Height="100" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
                 <Button x:Name="botradioStopButton" Click="Button_Click" Style="{StaticResource StopButton}" HorizontalAlignment="Left" Margin="151,66,0,0" VerticalAlignment="Top" Width="100" Height="100" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
@@ -163,7 +163,7 @@
             </Grid>
             <Grid x:Name="WebBlock" MouseDown="WebBlock_MouseDown" Opacity="0" Width="400" Height="183" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="460, 317,0,0">
                 <Grid.Background>
-                    <ImageBrush ImageSource="Web Block.png"/>
+                    <ImageBrush ImageSource="Images/Web Block.png"/>
                 </Grid.Background>
                 <Button x:Name="webPlayButton" Click="Button_Click" Style="{StaticResource PlayButton}" HorizontalAlignment="Left" Margin="23,66,0,0" VerticalAlignment="Top" Width="100" Height="100" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
                 <Button x:Name="webStopButton" Click="Button_Click" Style="{StaticResource StopButton}" HorizontalAlignment="Left" Margin="151,66,0,0" VerticalAlignment="Top" Width="100" Height="100" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
@@ -171,7 +171,7 @@
             </Grid>
             <Grid x:Name="statusBar" Opacity="0" Width="820" Height="40" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40, 534,0,0">
                 <Grid.Background>
-                    <ImageBrush ImageSource="Status Bar.png"/>
+                    <ImageBrush ImageSource="Images/Status Bar.png"/>
                 </Grid.Background>
                 <Label x:Name="statusText" FontFamily="Sitka Banner" FontSize="17" HorizontalAlignment="Center" VerticalContentAlignment="Center" Foreground="#FF31708F">Dernière commande exécutée: Aucune commande executée</Label>
             </Grid>
@@ -180,28 +180,28 @@
 
         <Grid x:Name="TeamSpeakContainer" Width="820" Height="450" Margin="940, 100, 40, 50" Opacity="0">
             <Grid.Background>
-                <ImageBrush ImageSource="TeamSpeak Container.png"/>
+                <ImageBrush ImageSource="Images/TeamSpeak Container.png"/>
             </Grid.Background>
             <Button x:Name="backButton" Style="{StaticResource BackButton}" Click="backButton_Click" HorizontalAlignment="Left" Margin="15,10,0,0" VerticalAlignment="Top" Width="40" Height="40" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
         </Grid>
 
         <Grid x:Name="BotAdminContainer" Width="820" Height="450" Margin="940, 100, 40, 50" Opacity="0">
             <Grid.Background>
-                <ImageBrush ImageSource="Bot Admin Container.png"/>
+                <ImageBrush ImageSource="Images/Bot Admin Container.png"/>
             </Grid.Background>
             <Button Style="{StaticResource BackButton}" Click="backButton_Click" HorizontalAlignment="Left" Margin="15,10,0,0" VerticalAlignment="Top" Width="40" Height="40" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
         </Grid>
 
         <Grid x:Name="BotRadioContainer" Width="820" Height="450" Margin="940, 100, 40, 50" Opacity="0">
             <Grid.Background>
-                <ImageBrush ImageSource="Bot Radio Container.png"/>
+                <ImageBrush ImageSource="Images/Bot Radio Container.png"/>
             </Grid.Background>
             <Button Style="{StaticResource BackButton}" Click="backButton_Click" HorizontalAlignment="Left" Margin="15,10,0,0" VerticalAlignment="Top" Width="40" Height="40" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
         </Grid>
 
         <Grid x:Name="WebContainer" Width="820" Height="450" Margin="940, 100, 40, 50" Opacity="0">
             <Grid.Background>
-                <ImageBrush ImageSource="Web Container.png"/>
+                <ImageBrush ImageSource="Images/Web Container.png"/>
             </Grid.Background>
             <Button Style="{StaticResource BackButton}" Click="backButton_Click" HorizontalAlignment="Left" Margin="15,10,0,0" VerticalAlignment="Top" Width="40" Height="40" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
         </Grid>
