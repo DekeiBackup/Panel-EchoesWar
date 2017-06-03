@@ -261,7 +261,7 @@
                 <Grid.Background>
                     <ImageBrush ImageSource="Images/Status Block.png"/>
                 </Grid.Background>
-                <Label Width="317" Height="65" Margin="29,67,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Label x:Name="TeamSpeakStatus" Width="317" Height="65" Margin="29,67,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" FontFamily="SimSun" FontWeight="Bold">
                     <Label.Background>
                         <ImageBrush ImageSource="Images/Status Label.png"/>
                     </Label.Background>
@@ -271,9 +271,9 @@
                 <Grid.Background>
                     <ImageBrush ImageSource="Images/Command Block.png"/>
                 </Grid.Background>
-                <Button Style="{StaticResource CommandPlayButton}" Width="88" Height="88" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="53,59,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
-                <Button Style="{StaticResource CommandStopButton}" Width="88" Height="88" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="144,59,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
-                <Button Style="{StaticResource CommandRestartButton}" Height="88" VerticalAlignment="Top" Margin="235,59,52,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+                <Button x:Name="CommandTeamSpeakPlayButton" Click="Command_Click" Style="{StaticResource CommandPlayButton}" Width="88" Height="88" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="53,59,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+                <Button x:Name="CommandTeamSpeakStopButton" Click="Command_Click" Style="{StaticResource CommandStopButton}" Width="88" Height="88" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="144,59,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+                <Button x:Name="CommandTeamSpeakRestartButton" Click="Command_Click" Style="{StaticResource CommandRestartButton}" Height="88" VerticalAlignment="Top" Margin="235,59,52,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
             </Grid>
             <Grid Width="760" Height="163" Margin="30,270,30,0" HorizontalAlignment="Left" VerticalAlignment="Top">
                 <Grid.Background>
@@ -297,7 +297,7 @@
                 <Grid.Background>
                     <ImageBrush ImageSource="Images/Status Block.png"/>
                 </Grid.Background>
-                <Label Width="317" Height="65" Margin="29,67,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Label x:Name="BotAdminStatus" Width="317" Height="65" Margin="29,67,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" FontFamily="SimSun" FontWeight="Bold">
                     <Label.Background>
                         <ImageBrush ImageSource="Images/Status Label.png"/>
                     </Label.Background>
@@ -307,9 +307,9 @@
                 <Grid.Background>
                     <ImageBrush ImageSource="Images/Command Block.png"/>
                 </Grid.Background>
-                <Button Style="{StaticResource CommandPlayButton}" Width="88" Height="88" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="53,59,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
-                <Button Style="{StaticResource CommandStopButton}" Width="88" Height="88" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="144,59,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
-                <Button Style="{StaticResource CommandRestartButton}" Height="88" VerticalAlignment="Top" Margin="235,59,52,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+                <Button x:Name="CommandBotAdminPlayButton" Click="Command_Click" Style="{StaticResource CommandPlayButton}" Width="88" Height="88" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="53,59,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+                <Button x:Name="CommandBotAdminStopButton" Click="Command_Click" Style="{StaticResource CommandStopButton}" Width="88" Height="88" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="144,59,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+                <Button x:Name="CommandBotAdminRestartButton" Click="Command_Click" Style="{StaticResource CommandRestartButton}" Height="88" VerticalAlignment="Top" Margin="235,59,52,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
             </Grid>
             <Button Style="{StaticResource BackButton}" Click="backButton_Click" HorizontalAlignment="Left" Margin="15,10,0,0" VerticalAlignment="Top" Width="40" Height="40" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
         </Grid>
@@ -322,7 +322,7 @@
                 <Grid.Background>
                     <ImageBrush ImageSource="Images/Status Block.png"/>
                 </Grid.Background>
-                <Label Width="317" Height="65" Margin="29,67,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Label x:Name="BotRadioStatus" Width="317" Height="65" Margin="29,67,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" FontFamily="SimSun" FontWeight="Bold">
                     <Label.Background>
                         <ImageBrush ImageSource="Images/Status Label.png"/>
                     </Label.Background>
@@ -332,9 +332,9 @@
                 <Grid.Background>
                     <ImageBrush ImageSource="Images/Command Block.png"/>
                 </Grid.Background>
-                <Button Style="{StaticResource CommandPlayButton}" Width="88" Height="88" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="53,59,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
-                <Button Style="{StaticResource CommandStopButton}" Width="88" Height="88" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="144,59,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
-                <Button Style="{StaticResource CommandRestartButton}" Height="88" VerticalAlignment="Top" Margin="235,59,52,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+                <Button x:Name="CommandBotRadioPlayButton" Click="Command_Click" Style="{StaticResource CommandPlayButton}" Width="88" Height="88" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="53,59,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+                <Button x:Name="CommandBotRadioStopButton" Click="Command_Click" Style="{StaticResource CommandStopButton}" Width="88" Height="88" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="144,59,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+                <Button x:Name="CommandBotRadioRebootButton" Click="Command_Click" Style="{StaticResource CommandRestartButton}" Height="88" VerticalAlignment="Top" Margin="235,59,52,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
             </Grid>
             <Button Style="{StaticResource BackButton}" Click="backButton_Click" HorizontalAlignment="Left" Margin="15,10,0,0" VerticalAlignment="Top" Width="40" Height="40" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
         </Grid>
@@ -347,7 +347,7 @@
                 <Grid.Background>
                     <ImageBrush ImageSource="Images/Status Block.png"/>
                 </Grid.Background>
-                <Label Width="317" Height="65" Margin="29,67,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Label x:Name="WebStatus" Width="317" Height="65" Margin="29,67,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" FontFamily="SimSun" FontWeight="Bold">
                     <Label.Background>
                         <ImageBrush ImageSource="Images/Status Label.png"/>
                     </Label.Background>
@@ -365,7 +365,7 @@
                 <Grid.Background>
                     <ImageBrush ImageSource="Images/Status SQL Block.png"/>
                 </Grid.Background>
-                <Label Width="317" Height="65" Margin="29,67,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Label x:Name="SQLStatus" Width="317" Height="65" Margin="29,67,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="18" FontFamily="SimSun" FontWeight="Bold">
                     <Label.Background>
                         <ImageBrush ImageSource="Images/Status Label.png"/>
                     </Label.Background>
@@ -375,9 +375,9 @@
                 <Grid.Background>
                     <ImageBrush ImageSource="Images/Command SQL Block.png"/>
                 </Grid.Background>
-                <Button Style="{StaticResource CommandPlayButton}" Width="88" Height="88" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="53,59,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
-                <Button Style="{StaticResource CommandStopButton}" Width="88" Height="88" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="144,59,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
-                <Button Style="{StaticResource CommandRestartButton}" Height="88" VerticalAlignment="Top" Margin="235,59,52,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+                <Button x:Name="CommandSQLPlayButton" Click="Command_Click" Style="{StaticResource CommandPlayButton}" Width="88" Height="88" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="53,59,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+                <Button x:Name="CommandSQLStopButton" Click="Command_Click" Style="{StaticResource CommandStopButton}" Width="88" Height="88" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="144,59,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+                <Button x:Name="CommandSQLRebootButton" Click="Command_Click" Style="{StaticResource CommandRestartButton}" Height="88" VerticalAlignment="Top" Margin="235,59,52,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
             </Grid>
             <Button Style="{StaticResource BackButton}" Click="backButton_Click" HorizontalAlignment="Left" Margin="15,10,0,0" VerticalAlignment="Top" Width="40" Height="40" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
         </Grid>
