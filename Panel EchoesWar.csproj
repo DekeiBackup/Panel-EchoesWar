@@ -200,5 +200,9 @@
     <Resource Include="Images\ServerQuery Block.png" />
     <Resource Include="Images\ServerQuery Textfield.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Command SQL Block.png" />
+    <Resource Include="Images\Status SQL Block.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

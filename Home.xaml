@@ -293,6 +293,24 @@
             <Grid.Background>
                 <ImageBrush ImageSource="Images/Bot Admin Container.png"/>
             </Grid.Background>
+            <Grid Width="375" Height="168" Margin="30,100,30,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Grid.Background>
+                    <ImageBrush ImageSource="Images/Status Block.png"/>
+                </Grid.Background>
+                <Label Width="317" Height="65" Margin="29,67,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Images/Status Label.png"/>
+                    </Label.Background>
+                </Label>
+            </Grid>
+            <Grid Width="375" Height="168" Margin="415,100,30,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Grid.Background>
+                    <ImageBrush ImageSource="Images/Command Block.png"/>
+                </Grid.Background>
+                <Button Style="{StaticResource CommandPlayButton}" Width="88" Height="88" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="53,59,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+                <Button Style="{StaticResource CommandStopButton}" Width="88" Height="88" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="144,59,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+                <Button Style="{StaticResource CommandRestartButton}" Height="88" VerticalAlignment="Top" Margin="235,59,52,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+            </Grid>
             <Button Style="{StaticResource BackButton}" Click="backButton_Click" HorizontalAlignment="Left" Margin="15,10,0,0" VerticalAlignment="Top" Width="40" Height="40" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
         </Grid>
 
@@ -300,6 +318,24 @@
             <Grid.Background>
                 <ImageBrush ImageSource="Images/Bot Radio Container.png"/>
             </Grid.Background>
+            <Grid Width="375" Height="168" Margin="30,100,30,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Grid.Background>
+                    <ImageBrush ImageSource="Images/Status Block.png"/>
+                </Grid.Background>
+                <Label Width="317" Height="65" Margin="29,67,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Images/Status Label.png"/>
+                    </Label.Background>
+                </Label>
+            </Grid>
+            <Grid Width="375" Height="168" Margin="415,100,30,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Grid.Background>
+                    <ImageBrush ImageSource="Images/Command Block.png"/>
+                </Grid.Background>
+                <Button Style="{StaticResource CommandPlayButton}" Width="88" Height="88" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="53,59,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+                <Button Style="{StaticResource CommandStopButton}" Width="88" Height="88" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="144,59,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+                <Button Style="{StaticResource CommandRestartButton}" Height="88" VerticalAlignment="Top" Margin="235,59,52,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+            </Grid>
             <Button Style="{StaticResource BackButton}" Click="backButton_Click" HorizontalAlignment="Left" Margin="15,10,0,0" VerticalAlignment="Top" Width="40" Height="40" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
         </Grid>
 
@@ -307,6 +343,42 @@
             <Grid.Background>
                 <ImageBrush ImageSource="Images/Web Container.png"/>
             </Grid.Background>
+            <Grid Width="375" Height="168" Margin="30,100,30,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Grid.Background>
+                    <ImageBrush ImageSource="Images/Status Block.png"/>
+                </Grid.Background>
+                <Label Width="317" Height="65" Margin="29,67,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Images/Status Label.png"/>
+                    </Label.Background>
+                </Label>
+            </Grid>
+            <Grid Width="375" Height="168" Margin="415,100,30,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Grid.Background>
+                    <ImageBrush ImageSource="Images/Command Block.png"/>
+                </Grid.Background>
+                <Button Style="{StaticResource CommandPlayButton}" Width="88" Height="88" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="53,59,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+                <Button Style="{StaticResource CommandStopButton}" Width="88" Height="88" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="144,59,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+                <Button Style="{StaticResource CommandRestartButton}" Height="88" VerticalAlignment="Top" Margin="235,59,52,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+            </Grid>
+            <Grid Width="375" Height="168" Margin="30,268,30,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Grid.Background>
+                    <ImageBrush ImageSource="Images/Status SQL Block.png"/>
+                </Grid.Background>
+                <Label Width="317" Height="65" Margin="29,67,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Images/Status Label.png"/>
+                    </Label.Background>
+                </Label>
+            </Grid>
+            <Grid Width="375" Height="168" Margin="415,268,30,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Grid.Background>
+                    <ImageBrush ImageSource="Images/Command SQL Block.png"/>
+                </Grid.Background>
+                <Button Style="{StaticResource CommandPlayButton}" Width="88" Height="88" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="53,59,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+                <Button Style="{StaticResource CommandStopButton}" Width="88" Height="88" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="144,59,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+                <Button Style="{StaticResource CommandRestartButton}" Height="88" VerticalAlignment="Top" Margin="235,59,52,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+            </Grid>
             <Button Style="{StaticResource BackButton}" Click="backButton_Click" HorizontalAlignment="Left" Margin="15,10,0,0" VerticalAlignment="Top" Width="40" Height="40" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
         </Grid>
 
