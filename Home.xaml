@@ -31,6 +31,13 @@
             <ImageBrush x:Key="NormalBackButton" ImageSource="Images/Normal Back Button.png"/>
             <ImageBrush x:Key="HoverBackButton" ImageSource="Images/Hover Back Button.png"/>
 
+            <ImageBrush x:Key="NormalCommandPlayButton" ImageSource="Images/Command Play Button.png"/>
+            <ImageBrush x:Key="NormalCommandStopButton" ImageSource="Images/Command Stop Button.png"/>
+            <ImageBrush x:Key="NormalCommandRestartButton" ImageSource="Images/Command Restart Button.png"/>
+
+            <ImageBrush x:Key="NormalExecuteButton" ImageSource="Images/Normal Execute Button.png"/>
+            <ImageBrush x:Key="HoverExecuteButton" ImageSource="Images/Hover Execute Button.png"/>
+
             <Style x:Key="CloseButton" TargetType="{x:Type Button}">
                 <Setter Property="Background" Value="{StaticResource NormalCloseButton}"/>
                 <Setter Property="Template">
@@ -133,6 +140,74 @@
                     </Trigger>
                 </Style.Triggers>
             </Style>
+            <Style x:Key="CommandPlayButton" TargetType="{x:Type Button}">
+                <Setter Property="Background" Value="{StaticResource NormalCommandPlayButton}"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background"  Value="{StaticResource NormalCommandPlayButton}"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            <Style x:Key="CommandStopButton" TargetType="{x:Type Button}">
+                <Setter Property="Background" Value="{StaticResource NormalCommandStopButton}"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background"  Value="{StaticResource NormalCommandStopButton}"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            <Style x:Key="CommandRestartButton" TargetType="{x:Type Button}">
+                <Setter Property="Background" Value="{StaticResource NormalCommandRestartButton}"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background"  Value="{StaticResource NormalCommandRestartButton}"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            <Style x:Key="ExecuteButton" TargetType="{x:Type Button}">
+                <Setter Property="Background" Value="{StaticResource NormalExecuteButton}"/>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background"  Value="{StaticResource HoverExecuteButton}"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
         </Grid.Resources>
 
         <Grid x:Name="BlockContainer">
@@ -182,6 +257,35 @@
             <Grid.Background>
                 <ImageBrush ImageSource="Images/TeamSpeak Container.png"/>
             </Grid.Background>
+            <Grid Width="375" Height="168" Margin="30,100,30,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Grid.Background>
+                    <ImageBrush ImageSource="Images/Status Block.png"/>
+                </Grid.Background>
+                <Label Width="317" Height="65" Margin="29,67,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <Label.Background>
+                        <ImageBrush ImageSource="Images/Status Label.png"/>
+                    </Label.Background>
+                </Label>
+            </Grid>
+            <Grid Width="375" Height="168" Margin="415,100,30,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Grid.Background>
+                    <ImageBrush ImageSource="Images/Command Block.png"/>
+                </Grid.Background>
+                <Button Style="{StaticResource CommandPlayButton}" Width="88" Height="88" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="53,59,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+                <Button Style="{StaticResource CommandStopButton}" Width="88" Height="88" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="144,59,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+                <Button Style="{StaticResource CommandRestartButton}" Height="88" VerticalAlignment="Top" Margin="235,59,52,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+            </Grid>
+            <Grid Width="760" Height="163" Margin="30,270,30,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Grid.Background>
+                    <ImageBrush ImageSource="Images/ServerQuery Block.png"/>
+                </Grid.Background>
+                <TextBox Width="450" Height="35" Margin="53,82,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="{x:Null}" FontFamily="SimSun" FontSize="20" FontWeight="Bold" VerticalContentAlignment="Center" Foreground="#FF95989A" Padding="7,0,0,0">
+                    <TextBox.Background>
+                        <ImageBrush ImageSource="Images/ServerQuery Textfield.png"/>
+                    </TextBox.Background>
+                </TextBox>
+                <Button Style="{StaticResource ExecuteButton}" Width="203" Height="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="520,82,0,0" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+            </Grid>
             <Button x:Name="backButton" Style="{StaticResource BackButton}" Click="backButton_Click" HorizontalAlignment="Left" Margin="15,10,0,0" VerticalAlignment="Top" Width="40" Height="40" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
         </Grid>
 
@@ -205,7 +309,7 @@
             </Grid.Background>
             <Button Style="{StaticResource BackButton}" Click="backButton_Click" HorizontalAlignment="Left" Margin="15,10,0,0" VerticalAlignment="Top" Width="40" Height="40" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
         </Grid>
-        
+
         <Button x:Name="closeButton" Style="{StaticResource CloseButton}" Click="CloseButtonClick" HorizontalAlignment="Left" Margin="848,20,0,0" VerticalAlignment="Top" Width="32" Height="32" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
         <Button x:Name="minimizeButton" Style="{StaticResource MinimizeButton}" Click="MinimizeButtonClick" HorizontalAlignment="Left" Margin="801,20,0,0" VerticalAlignment="Top" Width="32" Height="32" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
 
