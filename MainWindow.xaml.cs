@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media;
@@ -55,9 +56,24 @@ namespace Panel_EchoesWar
 
         private void ConnexionButtonClick(object sender, RoutedEventArgs e)
         {
-            Home frame = new Home();
-            frame.Show();
-            this.Close();
+            if(getDataReturn("http://panel.echoeswar.fr/pages/login_check.php?user=" + connexionUsernameBox.Text + "&password=" + connexionPasswordBox.Password) == "ok")
+            {
+                Home frame = new Home();
+                frame.Show();
+                this.Close();
+            }else
+            {
+                MessageBox.Show("Votre nom d'utilisateur ou votre mot de passe est incorrect.");
+            }
+        }
+
+        public string getDataReturn(string url)
+        {
+            WebClient client = new WebClient();
+            string html = client.DownloadString(url);
+            string status = html.Substring(html.IndexOf("<data>") + ("<data>").Length);
+            status = status.Substring(0, status.IndexOf("</data>"));
+            return status;
         }
 
         private void InscriptionButtonClick(object sender, RoutedEventArgs e)

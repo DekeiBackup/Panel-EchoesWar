@@ -155,7 +155,7 @@
             <Button x:Name="connexionButton" Style="{StaticResource ConnexionButton}" Content="Button" HorizontalAlignment="Left" Margin="320,360,0,0" VerticalAlignment="Top" Width="260" BorderBrush="{x:Null}" Foreground="{x:Null}" Height="40" Padding="0" Cursor="Hand" Click="ConnexionButtonClick">
 
             </Button>
-            <Button x:Name="inscriptionLinkButton" Style="{StaticResource InscriptionLinkButton}" Click="InscriptionLinkButtonClick" HorizontalAlignment="Left" Margin="539,428,0,0" VerticalAlignment="Top" Width="32" Height="32" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>
+            <!--<Button x:Name="inscriptionLinkButton" Style="{StaticResource InscriptionLinkButton}" Click="InscriptionLinkButtonClick" HorizontalAlignment="Left" Margin="539,428,0,0" VerticalAlignment="Top" Width="32" Height="32" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand"/>-->
         </Grid>
         <Grid x:Name="Inscription" Opacity="0" IsEnabled="False" HorizontalAlignment="Right">
             <TextBox x:Name="inscriptionUsernameBox" HorizontalAlignment="Left" Height="37" Margin="319,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262" BorderBrush="{x:Null}" FontFamily="SimSun" FontSize="20" FontWeight="Bold" VerticalContentAlignment="Center" Foreground="#FF95989A" Padding="7,0,0,0">
